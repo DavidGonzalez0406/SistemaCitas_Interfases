@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+
+<VBox alignment="CENTER" spacing="30.0" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <padding><Insets top="50" right="40" bottom="30" left="40"/></padding>
+   <children>
+      <Label text="LoveMatch" style="-fx-font-size: 52; -fx-font-weight: 900; -fx-text-fill: #FF512F;">
+         <effect><DropShadow color="#00000022" radius="5" offsetY="3" /></effect>
+      </Label>
+
+      <VBox spacing="10" VBox.vgrow="ALWAYS" style="-fx-background-color: #fcfcfc; -fx-padding: 25; -fx-background-radius: 20; -fx-border-color: #eee; -fx-border-radius: 20;">
+         <children>
+            <Label text="Términos de Privacidad" style="-fx-font-weight: bold; -fx-font-size: 18; -fx-text-fill: #333;" />
+            <TextArea editable="false" prefHeight="250.0" wrapText="true"
+                      text="Bienvenido a LoveMatch. Para ofrecerte la mejor experiencia y ayudarte a encontrar a esa persona especial, procesamos datos de ubicación e intereses.&#10;&#10;Tu información está segura con nosotros y puedes darte de baja en cualquier momento. Al continuar, aceptas que eres mayor de edad y respetas a los demás usuarios."
+                      style="-fx-background-color: transparent; -fx-font-size: 15; -fx-line-spacing: 4; -fx-text-fill: #555;" />
+         </children>
+      </VBox>
+
+      <VBox alignment="CENTER" spacing="20">
+         <children>
+            <CheckBox fx:id="checkAcepto" text="Acepto los términos y condiciones" onAction="#validarCheck" style="-fx-font-size: 14; -fx-text-fill: #666;" />
+
+            <Button fx:id="btnContinuar" text="EMPEZAR" disable="true" onAction="#irARegistro" prefWidth="320.0"
+                    style="-fx-background-color: #FF512F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 35; -fx-padding: 18; -fx-font-size: 18; -fx-cursor: hand;">
+               <effect><DropShadow color="#ff512f44" radius="15" offsetY="8" /></effect>
+            </Button>
+
+            <Button text="Ver Equipo de Desarrollo" onAction="#irAIntegrantes"
+                    style="-fx-background-color: transparent; -fx-text-fill: #3498db; -fx-underline: true; -fx-font-size: 13; -fx-padding: 10 0 0 0;" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

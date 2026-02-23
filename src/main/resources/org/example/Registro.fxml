@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.image.*?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <padding><Insets top="15" right="30" bottom="15" left="30"/></padding>
+   <children>
+      <Label text="Tu Perfil" style="-fx-font-size: 26; -fx-font-weight: 900; -fx-text-fill: #333;" />
+
+      <StackPane>
+         <children>
+            <Circle fx:id="circuloFondo" fill="#fdfdfd" radius="50.0" stroke="#FF512F" strokeType="INSIDE" strokeWidth="2.5" />
+            <ImageView fx:id="imgFotoRegistro" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+
+      <VBox spacing="8" alignment="CENTER">
+         <children>
+            <TextField promptText="Nombre" style="-fx-background-radius: 10;" />
+            <TextField promptText="Apellido" style="-fx-background-radius: 10;" />
+            <HBox spacing="10" alignment="CENTER_LEFT">
+               <children>
+                  <DatePicker fx:id="dpFechaNacimiento" onAction="#calcularEdad" promptText="Fecha de Nacimiento" prefWidth="180.0" />
+                  <Label fx:id="lblEdadCalculada" text="Edad: --" style="-fx-font-weight: bold; -fx-text-fill: #FF512F;" />
+               </children>
+            </HBox>
+            <TextField promptText="Teléfono" style="-fx-background-radius: 10;" />
+            <TextField promptText="Código Postal" style="-fx-background-radius: 10;" />
+            <ComboBox fx:id="cbGenero" promptText="Género" prefWidth="300.0" />
+         </children>
+      </VBox>
+
+      <Region VBox.vgrow="ALWAYS" />
+      <Button text="CONTINUAR" onAction="#irAExtras" prefWidth="300.0" style="-fx-background-color: #FF512F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 25; -fx-padding: 12;" />
+   </children>
+</VBox>

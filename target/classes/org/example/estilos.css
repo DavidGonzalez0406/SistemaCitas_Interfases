@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #F8F9FA;
+}
+
+.titulo-brand {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #FF512F, #DD2476);
+}
+
+/* Botón principal (Corazón y otros) */
+.button {
+    -fx-background-color: linear-gradient(to right, #FF512F, #DD2476);
+    -fx-text-fill: white;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+/* Tarjeta contenedora del perfil */
+.card-perfil {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 10);
+    -fx-overflow: hidden;
+}
+
+/* Estilo para los inputs */
+.text-field, .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" spacing="12.0" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+    <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+    <children>
+        <Label text="Intereses" style="-fx-font-size: 28; -fx-font-weight: bold;" />
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="¿Qué te gusta?" style="-fx-font-weight: bold; -fx-text-fill: #FF512F;" />
+            <GridPane hgap="10" vgap="8">
+                <children>
+                    <CheckBox text="Música" GridPane.columnIndex="0" GridPane.rowIndex="0"/><CheckBox text="Cine" GridPane.columnIndex="1" GridPane.rowIndex="0"/><CheckBox text="Viajes" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                    <CheckBox text="Deportes" GridPane.columnIndex="0" GridPane.rowIndex="1"/><CheckBox text="Cocina" GridPane.columnIndex="1" GridPane.rowIndex="1"/><CheckBox text="Lectura" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                    <CheckBox text="Gaming" GridPane.columnIndex="0" GridPane.rowIndex="2"/><CheckBox text="Arte" GridPane.columnIndex="1" GridPane.rowIndex="2"/><CheckBox text="Baile" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                    <CheckBox text="Gym" GridPane.columnIndex="0" GridPane.rowIndex="3"/><CheckBox text="Naturaleza" GridPane.columnIndex="1" GridPane.rowIndex="3"/><CheckBox text="Tech" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+                    <CheckBox text="Fotos" GridPane.columnIndex="0" GridPane.rowIndex="4"/><CheckBox text="Moda" GridPane.columnIndex="1" GridPane.rowIndex="4"/><CheckBox text="Mascotas" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+                </children>
+            </GridPane>
+        </VBox>
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Idiomas" style="-fx-font-weight: bold; -fx-text-fill: #FF512F;" />
+            <GridPane hgap="15" vgap="5">
+                <children>
+                    <CheckBox text="Español" GridPane.columnIndex="0"/><CheckBox text="Inglés" GridPane.columnIndex="1"/><CheckBox text="Francés" GridPane.columnIndex="2"/>
+                    <CheckBox text="Alemán" GridPane.columnIndex="0" GridPane.rowIndex="1"/><CheckBox text="Italiano" GridPane.columnIndex="1" GridPane.rowIndex="1"/><CheckBox text="Japonés" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                </children>
+            </GridPane>
+        </VBox>
+
+        <TextArea promptText="Cuéntanos más sobre ti..." prefHeight="60.0" wrapText="true" />
+        <Region VBox.vgrow="ALWAYS" />
+        <Button text="Finalizar" onAction="#irAFeed" prefWidth="300.0" style="-fx-background-color: #FF512F; -fx-text-fill: white; -fx-background-radius: 20; -fx-padding: 10;" />
+    </children>
+</VBox>
